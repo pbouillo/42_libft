@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 13:11:16 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/26 16:17:35 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/03/26 16:34:14 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ int	ft_strlen(char *str)
 
 char	*ft_strdup(char *src)
 {
-	char *new;
-	int i;
+	char	*new;
+	int	i;
 
 	i = 0;
 }
