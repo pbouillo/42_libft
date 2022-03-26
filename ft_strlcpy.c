@@ -1,15 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmoveTODO.c                                   :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/26 16:22:46 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/26 16:23:39 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/03/26 16:09:21 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/03/26 17:52:23 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* The memmove() function copies len bytes from string src to string dst.
-The two strings may overlap; the copy is always done in a non-destructive manner.
-The memmove() function returns the original value of dst.*/
+/*Copy strings. Take full size of the destination of the buffer 
+and guarantee NUL-termination if there is room. 
+Note that room for the NUL should be included in dstsize.
+strlcpy() copies up to dstsize - 1 characters from the string src to dst,
+NUL-terminating the result if dstsize is not 0.*/

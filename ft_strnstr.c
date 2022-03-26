@@ -1,15 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memsetTODO.c                                    :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/26 16:24:03 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/26 16:33:14 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/03/26 16:00:19 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/03/26 17:52:33 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* The memset() function writes len bytes of value c 
-(converted to an unsigned char) to the string b.
-The memset() function returns its first argument.*/
+/*The strnstr() function locates the first occurrence of the 
+null-terminated string needle in the string haystack,
+where not more than len characters are searched.
+Characters that appear after a `\0' character are not searched.
+Since the strnstr() function is a FreeBSD specific API, 
+it should only be used when portability is not a concern.*/

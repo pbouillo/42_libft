@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchrTODO.c                                    :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/26 16:18:42 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/26 16:32:35 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/03/26 15:28:01 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/03/26 17:52:38 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*The memchr() function locates the first occurrence of c 
-(converted to an unsigned char) in string s.
-The memchr() function returns a pointer to the byte located, 
-or NULL if no such byte exists within n bytes.*/
+/*The strrchr() function is identical to strchr(),
+except it locates the last occurrence of c.*/
+
+char *ft_strrchr(const char *s, int c)

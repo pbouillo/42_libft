@@ -1,17 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpyTODO.c                                   :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/26 16:09:21 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/26 16:36:31 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/03/26 17:51:21 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/03/26 17:51:24 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Copy strings. Take full size of the destination of the buffer 
-and guarantee NUL-termination if there is room. 
-Note that room for the NUL should be included in dstsize.
-strlcpy() copies up to dstsize - 1 characters from the string src to dst,
-NUL-terminating the result if dstsize is not 0.*/
+/*The bzero() function writes n zeroed bytes to the string s. 
+If n is zero, bzero() does nothing.*/
+
+void	bzero(void *s, size_t n)
+{
+	
+}

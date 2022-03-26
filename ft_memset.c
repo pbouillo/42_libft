@@ -1,18 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_callocTODO.c                                    :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/26 16:24:55 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/26 16:28:11 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/03/26 16:24:03 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/03/26 17:51:57 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* The calloc() function contiguously allocates enough 
-space for count objects that are size bytes of memory each
-and returns a pointer to the allocated memory. 
-The allocated memory is filled with bytes of value zero.
-Returns a pointer to allocated memory. If there is an error, 
-returns a NULL pointer and set errno to ENOMEM.*/
+/* The memset() function writes len bytes of value c 
+(converted to an unsigned char) to the string b.
+The memset() function returns its first argument.*/
