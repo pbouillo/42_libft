@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:13:16 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/26 17:52:17 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/03/29 09:16:55 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,5 @@ the original dst string was longer than dstsize
 (in practice this should not happen as it means 
 that either dstsize is incorrect or that dst is not a proper string).
 If the src and dst strings overlap, the behavior is undefined.*/
+
+size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
