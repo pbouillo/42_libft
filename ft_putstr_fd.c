@@ -6,14 +6,14 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:46:10 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/26 16:57:02 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/03/29 12:28:44 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*Outputs the string ’s’ to the given file
 descriptor.*/
 
-#include <unistd.h>
+#include <libft.h>
 
 void	ft_putchar(char c)
 {
