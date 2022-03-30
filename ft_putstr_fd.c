@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:46:10 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/30 13:08:17 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/03/30 13:30:11 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,5 @@ descriptor.*/
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	{
 		write(fd, s, ft_strlen(s));
-	}
 }
