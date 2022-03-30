@@ -6,11 +6,14 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:01:58 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/30 10:24:33 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/03/30 11:29:32 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef LIBFT_H
+# define LIBFT_H
 
+# include <unistd.h>
+# include <stdlib.h>
 
-#include <unistd.h>
-#include <stdlib.h>
+#endif
