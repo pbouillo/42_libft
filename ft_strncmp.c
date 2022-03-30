@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:06:35 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/30 10:27:57 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/03/30 12:49:27 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,4 @@ so that `\200' is greater than `\0'.*/
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	
 }

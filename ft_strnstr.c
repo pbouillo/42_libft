@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:00:19 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/30 10:33:21 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/03/30 12:49:38 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,4 @@ occurrence of needle is returned*/
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	
 }

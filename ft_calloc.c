@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:24:55 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/30 10:29:22 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/03/30 12:47:54 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,4 @@ returns a NULL pointer and set errno to ENOMEM.*/
 
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size)
+void *ft_calloc(size_t count, size_t size)
