@@ -6,9 +6,11 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 16:47:51 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/23 12:28:56 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/03/30 10:29:07 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int a)
 {
