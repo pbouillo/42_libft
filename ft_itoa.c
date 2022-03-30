@@ -1,23 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/26 16:46:10 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/30 13:08:17 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/03/30 13:14:59 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/03/30 13:15:49 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Outputs the string ’s’ to the given file
-descriptor.*/
+/* Allocates (with malloc(3)) and returns a string
+representing the integer received as an argument.
+Negative numbers must be handled.*/
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
-{
-	{
-		write(fd, s, ft_strlen(s));
-	}
-}
+char	*ft_itoa(int n)

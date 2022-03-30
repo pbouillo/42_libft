@@ -1,23 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/26 16:46:10 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/30 13:08:17 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/03/30 13:17:57 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/03/30 13:19:05 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Outputs the string ’s’ to the given file
-descriptor.*/
+/*Allocates (with malloc(3)) and returns a copy of
+’s1’ with the characters specified in ’set’ removed
+from the beginning and the end of the string.*/
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
-{
-	{
-		write(fd, s, ft_strlen(s));
-	}
-}
+char	*ft_strtrim(char const *s1, char const *set)

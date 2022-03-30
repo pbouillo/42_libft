@@ -1,23 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/26 16:46:10 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/30 13:08:17 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/03/30 13:05:50 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/03/30 13:07:55 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Outputs the string ’s’ to the given file
-descriptor.*/
+/* Outputs the string 's' to the given
+file descriptor followed by a newline */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_putendl_fd(char *s, int fd)
 {
-	{
-		write(fd, s, ft_strlen(s));
-	}
+	
 }
