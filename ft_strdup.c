@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 13:11:16 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/01 16:14:47 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/01 16:15:47 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ The strndup() function copies at most n characters from the string s1
 always NUL terminating the copied string.*/
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 char	*ft_strdup(char *src)
 {
