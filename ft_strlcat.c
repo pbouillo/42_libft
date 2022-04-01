@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:13:16 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/01 11:06:58 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/01 13:13:19 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,4 @@ optimization info */
 
 #include "libft.h"
 
-size_t ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
+size_t ft_strlcat(char *dst, const char *src, size_t dstsize)
