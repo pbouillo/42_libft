@@ -6,11 +6,11 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:13:16 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/30 10:28:09 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/01 11:06:58 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Concatenate strings. Take the full size of 
+/* Concatenate strings. Take the full size of 
 the destination buffer and guarantee NUL-termination 
 if there is room. Note that room for the NUL 
 should be included in dstsize.
@@ -22,7 +22,7 @@ the original dst string was longer than dstsize
 that either dstsize is incorrect or that dst is not a proper string).
 If the src and dst strings overlap, the behavior is undefined.
 restrict => no other pointer pointing to the same object.
-optimization info*/
+optimization info */
 
 #include "libft.h"
 
