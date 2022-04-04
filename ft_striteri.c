@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 13:08:27 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/30 13:10:48 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/04 12:54:48 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,4 +17,4 @@ by adress to 'f' to be modified if necessary */
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+void ft_striteri(char *s, void (*f)(unsigned int, char*))

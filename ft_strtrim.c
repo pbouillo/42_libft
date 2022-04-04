@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 13:17:57 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/04 12:00:39 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/04 12:53:56 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,4 +18,4 @@ Returns the trimmed string; NULL if allocation fails
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+char *ft_strtrim(char const *s1, char const *set)
