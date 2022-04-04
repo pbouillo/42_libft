@@ -6,9 +6,11 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 16:47:51 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/03/30 10:29:07 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/04 10:46:59 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* returns wether an integer is a digit or not */
 
 #include "libft.h"
 

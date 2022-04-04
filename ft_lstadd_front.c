@@ -1,24 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/26 16:09:21 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/04 11:53:04 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/04/04 12:06:54 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/04/04 12:09:40 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Copy strings. Take full size of the destination of the buffer 
-and guarantee NUL-termination if there is room. 
-Note that room for the NUL should be included in dstsize.
-strlcpy() copies up to dstsize - 1 characters from the string src to dst,
-NUL-terminating the result if dstsize is not 0.
-- copies dstsize minus 1 char from dst to src */
+/* Adds the node 'new' at the beginning of the list lst */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
-{
-}
+void	ft_lstadd_front(t_list **lst, t_list *new)

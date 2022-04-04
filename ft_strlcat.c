@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:13:16 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/01 13:13:19 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/04 11:07:38 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ the original dst string was longer than dstsize
 that either dstsize is incorrect or that dst is not a proper string).
 If the src and dst strings overlap, the behavior is undefined.
 restrict => no other pointer pointing to the same object.
-optimization info */
+optimization info 
+- adds dstsize - strlen(dst*/
 
 #include "libft.h"
 

@@ -1,24 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/26 16:09:21 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/04 11:53:04 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/04/04 10:55:30 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/04/04 10:57:11 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Copy strings. Take full size of the destination of the buffer 
-and guarantee NUL-termination if there is room. 
-Note that room for the NUL should be included in dstsize.
-strlcpy() copies up to dstsize - 1 characters from the string src to dst,
-NUL-terminating the result if dstsize is not 0.
-- copies dstsize minus 1 char from dst to src */
+/* returns the first difference between s1 and s2 */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
-{
-}
+int	ft_memcmp(const void *s1, const void *s2, size_t n)

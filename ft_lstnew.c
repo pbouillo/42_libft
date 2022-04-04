@@ -1,24 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/26 16:09:21 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/04 11:53:04 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/04/04 12:09:16 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/04/04 12:12:46 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Copy strings. Take full size of the destination of the buffer 
-and guarantee NUL-termination if there is room. 
-Note that room for the NUL should be included in dstsize.
-strlcpy() copies up to dstsize - 1 characters from the string src to dst,
-NUL-terminating the result if dstsize is not 0.
-- copies dstsize minus 1 char from dst to src */
+/* Allocates with (with malloc(3)) and returns
+a new node. The member variable 'content'
+is initialized with the value of the parameter 'content'.
+The variable 'next' is initialized to NULL. */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
-{
-}
+t_list *ft_lstnew(void *content)

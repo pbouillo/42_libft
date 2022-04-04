@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:01:58 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/01 13:15:19 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/04 12:29:02 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,12 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 int		ft_isprint(int c);
 int		ft_isalnum(int c);

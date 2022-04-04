@@ -6,14 +6,15 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 13:14:17 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/01 13:17:11 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/04 11:59:30 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* Allocates (with malloc(3)) and returns a substring
 from the string ’s’.
 The substring begins at index ’start’ and is of
-maximum size ’len’.*/
+maximum size ’len’.
+- creates a substring of s from start to (start + len) */
 
 #include "libft.h"
 

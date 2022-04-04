@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 13:11:16 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/01 16:15:47 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/04 11:05:29 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 does the copy, and returns a pointer to it. 
 The pointer may subsequently be used as an argument to the function free(3).
 The strndup() function copies at most n characters from the string s1
-always NUL terminating the copied string.*/
+always NUL terminating the copied string.
+- duplicates src (Check if NULL is returned) */
 
 #include "libft.h"
 

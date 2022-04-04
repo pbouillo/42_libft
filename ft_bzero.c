@@ -6,12 +6,12 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 17:51:21 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/01 10:22:51 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/04 10:50:19 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*The bzero() function writes n zeroed bytes to the string s. 
-If n is zero, bzero() does nothing.*/
+/* sets all bytes of s (any datatype) to 0. 
+If n is zero, ft_bzero does nothing */
 
 #include "libft.h"
 
