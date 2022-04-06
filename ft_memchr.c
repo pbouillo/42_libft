@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:18:42 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/04 14:54:04 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/04 17:32:36 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,4 @@ or NULL if no such byte exists within n bytes.
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
-{
-}
+void	*ft_memchr(const void *s, int c, size_t n);

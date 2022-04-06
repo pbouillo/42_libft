@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 17:51:21 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/04 10:50:19 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/04 17:31:55 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,9 @@ If n is zero, ft_bzero does nothing */
 
 void	ft_bzero(void *s, size_t n)
 {
-	int	i;
+	size_t	i;
 
+	i = 0;
 	while (i < n)
 	{	
 		((char *)s)[i] = '\0';

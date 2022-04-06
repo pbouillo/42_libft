@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 12:09:16 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/04 12:12:46 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/04 17:32:25 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,4 +17,4 @@ The variable 'next' is initialized to NULL. */
 
 #include "libft.h"
 
-t_list *ft_lstnew(void *content)
+t_list *ft_lstnew(void *content);

@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:00:19 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/04 11:58:03 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/04 17:33:32 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,4 @@ occurrence of needle is returned
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
-{
-}
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);

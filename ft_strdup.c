@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 13:11:16 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/04 14:50:07 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/06 16:57:46 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strdup(char *src)
 
 	i = 0;
 	new = (char *)malloc(sizeof(char) * ft_strlen(src) + 1);
-	if (!new)
+	if (new == NULL)
 		return (NULL);
 	while (*src)
 		new[i++] = *src++;
