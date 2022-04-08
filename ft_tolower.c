@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 11:42:15 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/04 10:47:34 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/08 13:49:31 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 int	ft_tolower(int c)
 {
-	if (c >= 65 || c <= 90)
+	if (c >= 65 && c <= 90)
 		return (c + 32);
 	else
 		return (c);

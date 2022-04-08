@@ -6,7 +6,7 @@
 #    By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/01 11:25:33 by pbouillo          #+#    #+#              #
-#    Updated: 2022/04/06 16:17:54 by pbouillo         ###   ########.fr        #
+#    Updated: 2022/04/08 13:46:02 by pbouillo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRC = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 	ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c ft_strnstr.c \
 	ft_strrchr.c ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c \
 
-OBJ = $(SRC:.c=.o)
+OBJS = $(*.o)
 
 CC = 	gcc
 CFLAGS = -Wall -Wextra -Werror
@@ -29,13 +29,14 @@ RM = 	rm -f
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	ar -rcs $(NAME) $(OBJ)
+$(NAME):
+	$(CC) $(CFLAGS) -c $(SRC)
+	ar -rcs $(NAME) *.o
 
 clean:
-	$(RM) $(OBJ) !$(NAME)
+	$(RM) *.o !$(NAME)
 
 fclean:	clean
-	$(RM) $(OBJ) $(NAME)
+	$(RM) $(NAME)
 
 re:	fclean all
