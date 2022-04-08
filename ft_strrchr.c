@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 15:28:01 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/04 17:33:34 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/08 16:54:12 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,4 +18,4 @@ if the character does not appear in the string
 
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);

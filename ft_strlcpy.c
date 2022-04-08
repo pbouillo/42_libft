@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:09:21 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/06 18:53:48 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/08 15:43:02 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,4 @@ NUL-terminating the result if dstsize is not 0.
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
-{
-	
-}
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
