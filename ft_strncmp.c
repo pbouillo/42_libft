@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:06:35 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/04 17:33:27 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/06 18:10:09 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ Return an integer greater than, equal to,
 or less than 0, according as the string s1 is greater than, 
 equal to, or less than the string s2. 
 The comparison is done using unsigned characters,
-so that `\200' is greater than `\0'.*/
+so that `\200' is greater than `\0'.
+- returns the first difference of src and dst (0 if no difference accured) */
 
 #include "libft.h"
 
