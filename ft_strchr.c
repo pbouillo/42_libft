@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 16:55:04 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/08 13:35:33 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/10 17:03:17 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,7 @@ pointed to by s. The terminating null character
 is considered to be part of the string;
 therefore if c is `\0', the functions locate
 the terminating `\0'. 
-Returns a pointer to the located character, or NULL
-if the character does not appear in the string 
+Returns a pointer to the located character
 - finds c in s, returns 0 if not found */
 
 #include "libft.h"
