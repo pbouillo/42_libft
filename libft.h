@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:01:58 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/04 16:59:53 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/08 18:32:55 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,8 +79,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 /* LIST-FUNCTIONS | 
 The lst-funtcions allow you to manipulate and use lists. 
 Lists are quiet useful if you dont know the final length of an array 
-because you can just append as many nodes 
-as you until you run out of memory. */
+because you can just append as many nodes as you want 
+until you run out of memory. */
 
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstadd_front(t_list **lst, t_list *new);
