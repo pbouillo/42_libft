@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 15:28:01 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/10 17:03:10 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/12 17:04:40 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,16 @@ returns pointer to located character, 0 if not found */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c)
+{
+	int	i;
+
+	i = ft_strlen(s);
+	while (i >= 0)
+	{
+		if (s[i] == c)
+			return ((char *)(s + i));
+		i--;
+	}
+	return (NULL);
+}
