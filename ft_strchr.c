@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 16:55:04 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/10 17:03:17 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/12 13:35:17 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ Returns a pointer to the located character
 char	*ft_strchr(const char *s, int c)
 {
 	while ((*s != c) && (*s != '\0'))
-	{	
+	{
 		s++;
 	}
 	if (*s == c)
