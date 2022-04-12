@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 16:55:04 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/12 13:35:17 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/12 14:05:00 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,5 @@ char	*ft_strchr(const char *s, int c)
 	{
 		return ((char *)s);
 	}
-	return ((char *) NULL);
+	return (NULL);
 }
