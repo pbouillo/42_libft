@@ -6,11 +6,11 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 12:04:06 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/04 17:32:21 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/14 12:43:09 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Adds the node 'new' at the end of the list lst */
+/* Adds the node 'new' at the end of the list 'lst' */
 
 #include "libft.h"
 

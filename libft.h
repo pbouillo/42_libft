@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:01:58 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/12 16:43:18 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/14 13:41:59 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ any type of arrays (but bytewise). */
 
 void	ft_bzero(void *s, size_t n);
 // void	*ft_memcpy(void *dst, const void *src, size_t n);
-// void	*ft_memchr(const void *s, int c, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
 // int		ft_memcmp(const void *s1, const void *s2, size_t n);
 // void	*ft_memmove(void *dst, const void *src, size_t len);
 // void	*ft_memset(void *b, int c, size_t len);
