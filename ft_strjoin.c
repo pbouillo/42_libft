@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 13:19:29 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/08 15:42:19 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/14 17:57:42 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,4 +17,27 @@ of ’s1’ and ’s2’.
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin(char const *s1, char const *s2)
+{
+	char	*new;
+	int		i;
+	int		j;
+
+	i = 0;
+	j = 0;
+	new = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	if (new == NULL)
+		return (NULL);
+	while (s1[i])
+	{
+		new[i] = s1[i];
+		i++;
+	}
+	while (s2[j])
+	{
+		new[i + j] = s2[j];
+		j++;
+	}
+	new[i + j] = '\0';
+	return (new);
+}
