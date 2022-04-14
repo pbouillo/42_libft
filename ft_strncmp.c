@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:06:35 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/12 15:37:17 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/14 17:23:22 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,14 @@ so that `\200' is greater than `\0'.
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n);
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
+{
+	size_t	i;
+
+	i = 0;
+	if (n == 0)
+		return (0);
+	while (i < n - 1 && s1[i] != '\0' && s1[i] == s2[i])
+		i++;
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+}

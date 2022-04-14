@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:20:24 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/14 15:39:08 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/14 16:27:17 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ return the original value of dst */
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned int	i;
+	size_t			i;
 	unsigned char	*to;
 	unsigned char	*from;
 
