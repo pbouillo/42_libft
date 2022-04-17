@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:09:21 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/14 17:01:17 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/17 16:59:01 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@ and guarantee NUL-termination if there is room.
 Note that room for the NUL should be included in dstsize.
 strlcpy() copies up to dstsize - 1 characters from the string src to dst,
 NUL-terminating the result if dstsize is not 0.
+Returns length of src.
 - copies dstsize minus 1 char from src to dst */
 
 #include "libft.h"
@@ -24,11 +25,12 @@ NUL-terminating the result if dstsize is not 0.
 	size_t	i;
 
 	i = 0;
-	while (dstsize != 0 && i < (dstsize - 1))
+	while (dst[i] && src[i] && i < (dstsize - 1))
 	{
 		dst[i] = src[i];
 		i++;
-		dst[i] = '\0';
 	}
+	dst[i] = '\0';
 	return (i);
-} */
+}
+ */
