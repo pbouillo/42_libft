@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:22:46 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/17 19:41:44 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/17 19:54:33 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			to[len] = from[len];
 	}
 	else
-	{	
-		while (i < len)
-		{
-			to[i] = from[i];
-			i++;
-		}
-	}
+		ft_memcpy(to, from, len);
 	return (to);
 }
