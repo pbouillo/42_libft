@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 15:28:01 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/12 18:00:42 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/17 17:36:56 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strrchr(const char *s, int c)
 	i = ft_strlen(s);
 	while (i >= 0)
 	{
-		if (s[i] == c)
+		if (s[i] == (unsigned char) c)
 			return ((char *)(s + i));
 		i--;
 	}
