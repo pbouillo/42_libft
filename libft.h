@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:01:58 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/19 14:30:20 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/19 16:13:42 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strtrim(char const *s1, char const *set);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 // char	**ft_split(char const *s, char c);
-// void	ft_striteri(char *s, void (*f)(unsigned int, char*)); 
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 /* LIST-FUNCTIONS | 
 The lst-funtcions allow you to manipulate and use lists. 
