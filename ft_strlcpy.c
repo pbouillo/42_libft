@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:09:21 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/17 16:59:01 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/19 11:29:50 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,22 @@ Returns length of src.
 
 #include "libft.h"
 
-/* size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
+	size_t	count;
 
 	i = 0;
-	while (dst[i] && src[i] && i < (dstsize - 1))
+	count = 0;
+	while (src[count])
+		count++;
+	if (dstsize < 1)
+		return (count);
+	while (src[i] && i < (dstsize - 1))
 	{
 		dst[i] = src[i];
 		i++;
 	}
 	dst[i] = '\0';
-	return (i);
+	return (count);
 }
- */
