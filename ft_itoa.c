@@ -15,7 +15,6 @@ representing the integer received as an argument.
 Negative numbers must be handled. */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	neg_rev(int nbr)
 {
