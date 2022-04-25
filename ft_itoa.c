@@ -15,43 +15,47 @@ representing the integer received as an argument.
 Negative numbers must be handled. */
 
 #include "libft.h"
+#include <stdio.h>
 
-int	count_digits(int num)
+int	neg_rev(int nbr)
 {
-	int	count;
+	if (nbr < 0)
+		return (-nbr);
+	return (nbr);
+}
 
-	count = 0;
-	while (num > 0)
+int	nbr_len(int nbr)
+{
+	int	len;
+
+	len = 0;
+	if (nbr <= 0)
+		len = 1;
+	while (nbr != 0)
 	{
-		num /= 10;
-		count++;
+		++len;
+		nbr /= 10;
 	}
-	return (count);
+	return (len);
 }
 
 char	*ft_itoa(int n)
 {
-	int		i;
-	int		j;
-	char	*new;
-	char	t;
+	char	*ret;
+	int		len;
 
-	i = 0;
-	new = (char *)malloc(sizeof(char) * count_digits(n));
-	while (n > 0)
+	len = nbr_len(n);
+	ret = malloc(sizeof(char) * (len + 1));
+	ret[len] = '\0';
+	if (n < 0) 
+		ret[0] = '-';
+	else if (n == 0)
+		ret[0] = '0';
+	while (n != 0)
 	{
-		new[i] = (n % 10) + '0';
-		n = n / 10;
+		--len;
+		ret[len] = neg_rev(n % 10) + '0';
+		n /= 10;
 	}
-	new[i] = '\0';
-	j = 0;
-	while (j < i)
-	{
-		t = new[i];
-		new[i] = new[j];
-		new[j] = t;
-		i--;
-		j++;
-	}
-	return (new);
+	return (ret);
 }
