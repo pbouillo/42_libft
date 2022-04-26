@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:01:58 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/19 17:52:34 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/26 10:52:11 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ several macros, and various functions for performing general functions. */
 
 int		ft_atoi(const char *str);
 void	*ft_calloc(size_t count, size_t size);
-// char	*ft_itoa(int n);
+char	*ft_itoa(int n);
 
 /* STRING | The string.h header defines one variable type, one macro, 
 and various functions for manipulating arrays of characters. */

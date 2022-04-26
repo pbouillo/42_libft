@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 13:14:59 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/21 17:05:56 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/26 10:53:07 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,10 @@ char	*ft_itoa(int n)
 
 	len = nbr_len(n);
 	ret = malloc(sizeof(char) * (len + 1));
+	if (ret == NULL)
+		return (NULL);
 	ret[len] = '\0';
-	if (n < 0) 
+	if (n < 0)
 		ret[0] = '-';
 	else if (n == 0)
 		ret[0] = '0';
