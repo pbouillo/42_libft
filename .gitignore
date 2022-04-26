@@ -1,5 +1,6 @@
 *.md
-a.out
+*.out
 *.o
 settings.json
 extensions.json
+.DS_Store
