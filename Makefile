@@ -37,7 +37,7 @@ $(NAME):
 
 bonus:
 	$(CC) $(CFLAGS) -c $(BONUS_OBJS)
-	ar -rcs $(NAME) $(BONUS_OBJS)
+	ar -rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 
 clean:
 	$(RM) $(OBJS) $(BONUS_OBJS) !$(NAME)
@@ -46,3 +46,5 @@ fclean:	clean
 	$(RM) $(NAME)
 
 re:	fclean all
+
+.PHONY: all clean fclean re bonus

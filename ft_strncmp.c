@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:06:35 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/17 12:08:30 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/27 12:54:52 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ equal to, or less than the string s2.
 The comparison is done using unsigned characters,
 so that `\200' is greater than `\0'.
 - returns the int difference between src and dst 
-(0 if no difference accured) */
+(0 if no difference occured) */
 
 #include "libft.h"
 
