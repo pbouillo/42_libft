@@ -1,32 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/30 13:08:27 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/26 11:24:48 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/04/27 16:20:59 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/04/27 17:21:11 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Applies the function 'f' on each character
-of the string passed as argument, passing
-its index as first argument. Each charachter is passed
-by adress to 'f' to be modified if necessary */
+/* Deletes and frees the given node and every
+successor of that node, using the function 'del'
+and free(3).
+Finally, the pointer to the list must be set to NULL */
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
-{
-	unsigned int	i;
-
-	i = 0;
-	if (s == NULL)
-		return ;
-	while (s[i])
-	{
-		f(i, s + i);
-		i++;
-	}
-}
+void	ft_lstclear(t_list **lst, void (*del)(void *));

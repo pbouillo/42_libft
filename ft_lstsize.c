@@ -1,32 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/30 13:08:27 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/26 11:24:48 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/04/27 16:16:36 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/04/27 17:57:30 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Applies the function 'f' on each character
-of the string passed as argument, passing
-its index as first argument. Each charachter is passed
-by adress to 'f' to be modified if necessary */
+/* Counts the number of nodes in a list 
+Returns the length of the list */
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+int	ft_lstsize(t_list *lst)
 {
-	unsigned int	i;
+	int	size;
 
-	i = 0;
-	if (s == NULL)
-		return ;
-	while (s[i])
+	size = 0;
+	if (lst == NULL)
+		return (0);
+	while (lst)
 	{
-		f(i, s + i);
-		i++;
+		++size;
+		lst = lst->next;
 	}
+	return (size);
 }

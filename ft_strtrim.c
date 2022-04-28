@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 13:17:57 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/19 15:44:40 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/26 11:26:17 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	sz;
 	char	*retstr;
 
-	if (s1 == NULL && set == NULL)
+	if (s1 == NULL || set == NULL)
 		return (NULL);
 	while (*s1 && ft_strchr(set, *s1))
 		s1++;

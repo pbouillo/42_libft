@@ -1,32 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/30 13:08:27 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/26 11:24:48 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/04/27 16:17:54 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/04/27 17:11:27 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Applies the function 'f' on each character
-of the string passed as argument, passing
-its index as first argument. Each charachter is passed
-by adress to 'f' to be modified if necessary */
+/* Returns the last node of the list */
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+t_list	*ft_lstlast(t_list *lst)
 {
-	unsigned int	i;
-
-	i = 0;
-	if (s == NULL)
-		return ;
-	while (s[i])
+	if (lst == NULL)
+		return (NULL);
+	while (lst->next != NULL)
 	{
-		f(i, s + i);
-		i++;
+		lst = lst->next;
 	}
+	return (lst);
 }

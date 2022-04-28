@@ -1,32 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/30 13:08:27 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/26 11:24:48 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/04/27 16:22:39 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/04/27 17:06:20 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Applies the function 'f' on each character
-of the string passed as argument, passing
-its index as first argument. Each charachter is passed
-by adress to 'f' to be modified if necessary */
+/* Iterates the list ’lst’ and applies the function ’f’ 
+on the content of each node. */
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	unsigned int	i;
-
-	i = 0;
-	if (s == NULL)
+	if (f == NULL || lst == NULL)
 		return ;
-	while (s[i])
+	while (lst)
 	{
-		f(i, s + i);
-		i++;
+		f(lst->content);
+		lst = lst->next;
 	}
 }

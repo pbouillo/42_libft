@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:22:46 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/17 20:07:35 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/26 16:15:27 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,11 @@ and backwards otherwise */
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t			i;
 	unsigned char	*to;
 	unsigned char	*from;
 
 	to = (unsigned char *) dst;
 	from = (unsigned char *) src;
-	i = 0;
 	if (dst == NULL && src == NULL)
 		return (NULL);
 	if (to > from)

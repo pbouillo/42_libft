@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 13:14:17 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/17 16:56:24 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/04/26 16:11:02 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,18 +22,26 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
 	char	*sub;
+	size_t	start_copy;
+	size_t	src_len;
 
 	i = 0;
-	if (start < ft_strlen(s) && len > ft_strlen(s))
-		len = ft_strlen(s);
-	else if (ft_strlen(s) <= start)
-		len = 0;
-	sub = (char *) malloc(sizeof(char) * (len + 1));
-	if (sub == NULL || s == NULL)
+	if (s == NULL)
 		return (NULL);
-	while (i < len && start < ft_strlen(s))
+	src_len = ft_strlen(s);
+	start_copy = ((size_t)start);
+	sub = NULL;
+	if (start_copy > src_len)
+		return (ft_strdup(""));
+	if (start < src_len && len > src_len)
+		len = src_len;
+	sub = malloc((len + 1) * sizeof(char));
+	if (sub == NULL)
+		return (NULL);
+	while (i < len && s[start_copy + i])
 	{
-		sub[i++] = s[start++];
+		sub[i] = s[start_copy + i];
+		i++;
 	}
 	sub[i] = '\0';
 	return (sub);
