@@ -26,7 +26,7 @@ ft_lstdelone.c ft_lstiter.c ft_lstlast.c ft_lstsize.c
 
 OBJS 		= $(SRCS:.c=.o)
 BONUS_OBJS	= $(BONUS:.c=.o)
-CC			= gcc
+CC			= cc
 CFLAGS 		= -Wall -Wextra -Werror
 RM 			= rm -f
 
