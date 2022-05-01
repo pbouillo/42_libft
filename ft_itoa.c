@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 13:14:59 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/27 13:19:11 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/05/01 14:09:54 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,14 @@ Negative numbers must be handled. */
 
 #include "libft.h"
 
-int	neg_rev(int nbr)
+static int	neg_rev(int nbr)
 {
 	if (nbr < 0)
 		return (-nbr);
 	return (nbr);
 }
 
-int	nbr_len(int nbr)
+static int	nbr_len(int nbr)
 {
 	int	len;
 

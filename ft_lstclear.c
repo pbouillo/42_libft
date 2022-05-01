@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 16:20:59 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/27 17:21:11 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/05/01 12:43:49 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,4 +17,20 @@ Finally, the pointer to the list must be set to NULL */
 
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void *));
+void	ft_lstclear(t_list **lst, void (*del)(void *))
+{
+	t_list	*tmp;
+	t_list	*head;
+
+	if (lst == NULL || del == NULL)
+		return ;
+	head = *lst;
+	while (head != NULL)
+	{
+		tmp = head->next;
+		del(head->content);
+		free(head);
+		head = tmp;
+	}
+	*lst = NULL;
+}

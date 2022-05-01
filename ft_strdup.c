@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 13:11:16 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/17 12:02:30 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/05/01 14:37:07 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,18 @@ The pointer may subsequently be used as an argument to the function free(3).
 
 #include "libft.h"
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(const char *s1)
 {
 	char	*new;
 	int		i;
 
 	i = 0;
-	new = (char *)malloc(sizeof(char) * ft_strlen(src) + 1);
+	new = (char *)malloc(sizeof(char) * ft_strlen(s1) + 1);
 	if (new == NULL)
 		return (NULL);
-	while (src[i])
+	while (s1[i])
 	{
-		new[i] = src[i];
+		new[i] = s1[i];
 		i++;
 	}
 	new[i] = '\0';
