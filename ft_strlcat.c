@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:13:16 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/19 13:24:23 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/05/01 18:53:58 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,26 +22,22 @@ Returns initial length of dst plus the length of src.
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {	
-	size_t	sz;
-	size_t	i;
-	size_t	dstlen;
-	size_t	srclen;
+	char	*src_str;
+	size_t	src_len;
+	size_t	destlen;
+	int		i;
 
+	src_str = (char *)src;
 	i = 0;
-	sz = ft_strlen(dst);
-	dstlen = ft_strlen(dst);
-	srclen = ft_strlen(src);
-	if (dstsize < 1)
-		return (srclen + dstsize);
-	while (src[i] && sz < dstsize - 1)
+	destlen = ft_strlen(dst);
+	src_len = ft_strlen(src_str);
+	if (dstsize <= destlen)
+		return (dstsize + src_len);
+	while (src_str[i] != '\0' && (destlen + i) < (dstsize - 1))
 	{
-		dst[sz] = src[i];
-		sz++;
+		dst[destlen + i] = src_str[i];
 		i++;
 	}
-	dst[sz] = '\0';
-	if (dstsize < dstlen)
-		return (srclen + dstsize);
-	else
-		return (dstlen + srclen);
+	dst[destlen + i] = '\0';
+	return (destlen + src_len);
 }
