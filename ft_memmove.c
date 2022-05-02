@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/* The memmove() function copies len bytes from string src to string dst.
-The two strings may overlap; the copy is always done in a non-destructive manner.
-The memmove() function returns the original value of dst.
+/* The memmove() function copies len bytes from src to dst.
 - same as memcpy but handles overlaps by copying forward if dest < src 
 and backwards otherwise */
 
