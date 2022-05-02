@@ -10,13 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Concatenate strings. Note that room for the NUL 
-should be included in dstsize.
-strlcat() appends string src to the end of dst. 
-It will then NUL-terminate, unless dstsize is 0 or 
-the original dst string was longer than dstsize 
-Returns initial length of dst plus the length of src.
-- adds dstsize - strlen(dstsize) - 1 chars to dst from src */
+/* The strlcat() function appends the NUL-terminated string src 
+to the end of dst. It will append at most dstsize - strlen(dst) - 1 bytes, 
+NUL-terminating the result.
+Returns the initial length of dst plus the length of src. */
 
 #include "libft.h"
 

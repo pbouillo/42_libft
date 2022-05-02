@@ -17,7 +17,7 @@ with a NULL pointer. */
 
 #include "libft.h"
 
-static int	substr_counter(char const *s, char c)
+static int	count_words(char const *s, char c)
 {
 	unsigned int	i;
 	int				cntr;
@@ -36,7 +36,7 @@ static int	substr_counter(char const *s, char c)
 	return (cntr);
 }
 
-static int	substr_len(const char *s, char c, int len)
+static int	word_len(const char *s, char c, int len)
 {
 	int	i;
 
@@ -74,7 +74,7 @@ char	**ft_split(char const *s, char c)
 	str_i = 0;
 	if (s == NULL)
 		return (NULL);
-	str_count = substr_counter(s, c);
+	str_count = count_words(s, c);
 	ret = (char **)malloc((str_count + 1) * sizeof(char *));
 	if (ret == NULL)
 		return (NULL);
@@ -82,11 +82,11 @@ char	**ft_split(char const *s, char c)
 	{
 		while (s[i] == c)
 			i++;
-		ret[str_i] = ft_substr(s, i, substr_len(s, c, i));
+		ret[str_i] = ft_substr(s, i, word_len(s, c, i));
 		if (ret[str_i] == NULL)
 			return (free_null_str(str_count, ret));
 		str_i++;
-		i += substr_len(s, c, i);
+		i += word_len(s, c, i);
 	}
 	ret[str_i] = NULL;
 	return (ret);

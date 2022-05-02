@@ -10,15 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/* The strnstr() function locates the first occurrence of the 
-null-terminated string needle in the string haystack,
-where not more than len characters are searched.
-Characters that appear after a `\0' character are not searched. 
+/* Finds the string needle in the string haystack 
+searching for up top len characters.
 If needle is an empty string, haystack is returned;
 if needle occurs nowhere in haystack, NULL is returned;
 otherwise a pointer to the first character of the first
-occurrence of needle is returned 
-- finds the needle in the haystack */
+occurrence of needle is returned */
 
 #include "libft.h"
 

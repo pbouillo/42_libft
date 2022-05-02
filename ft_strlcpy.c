@@ -10,11 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Copy strings. Note that room for the NUL should be included in dstsize.
-strlcpy() copies up to dstsize - 1 characters from the string src to dst,
-NUL-terminating the result if dstsize is not 0.
-Returns length of src.
-- copies dstsize minus 1 char from src to dst */
+/* The strlcpy() function copies up to dstsize - 1 characters
+from the NUL-terminated string src to dst, 
+NUL-terminating the result.
+Returns the length of src. */
 
 #include "libft.h"
 
