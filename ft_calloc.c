@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:24:55 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/01 18:46:48 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/05/03 11:17:22 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*data;
 
 	if (count == 0 || size == 0)
-		return (ft_strdup(""));
+		return (malloc(0));
 	if ((SIZE_MAX / size) < count && size > 0)
 		return (NULL);
 	data = malloc(count * size);
