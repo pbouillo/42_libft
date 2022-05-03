@@ -6,11 +6,12 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:22:46 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/26 16:15:27 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/05/03 10:28:45 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* The memmove() function copies len bytes from src to dst.
+/* The memmove() function copies len bytes from memory area src to
+memory area dst.
 - same as memcpy but handles overlaps by copying forward if dest < src 
 and backwards otherwise */
 
