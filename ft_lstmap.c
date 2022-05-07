@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 12:17:35 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 13:33:04 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/05/07 14:08:49 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	new_lst = NULL;
 	while (lst != NULL)
 	{
-		ptr = ft_lstnew(f(ptr->content));
+		ptr = ft_lstnew(f(lst->content));
 		if (ptr == NULL)
 			del(ptr);
 		else
