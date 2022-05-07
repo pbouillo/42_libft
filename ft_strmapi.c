@@ -6,15 +6,14 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 13:12:06 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:22:37 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/05/07 15:01:44 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* Applies the function 'f' to each character of 
 the string 's', and passing its index as first 
 argument to create a new string (with malloc(3))
-resulting from successive applications of 'f'. 
-- applies function f on every char of s */
+resulting from successive applications of 'f'. */
 
 #include "libft.h"
 
