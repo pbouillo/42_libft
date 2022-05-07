@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 13:13:48 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/26 11:50:16 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/05/07 12:53:50 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ Handles white spaces, then sign, then the conversion */
 
 int	ft_atoi(const char *str)
 {
-	int	res;
-	int	sign;
+	long	res;
+	long	sign;
 
 	res = 0;
 	sign = 1;
@@ -32,6 +32,10 @@ int	ft_atoi(const char *str)
 		str++;
 	while (*str >= '0' && *str <= '9')
 	{
+		if (res > 922337203685477580 && sign != -1)
+			return (-1);
+		if (res > 922337203685477580 && sign == -1)
+			return (0);
 		res = res * 10 + *str - '0';
 		str++;
 	}
