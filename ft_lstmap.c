@@ -6,9 +6,14 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 12:17:35 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 12:18:24 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/05/07 13:33:04 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* Iterates the list ’lst’ and applies the function ’f’ 
+on the content of each node. Creates a new list resulting 
+of the successive applications of the function ’f’.
+The ’del’ function is used to delete the content of a node if needed. */
 
 #include "libft.h"
 
@@ -16,22 +21,16 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*ptr;
 	t_list	*new_lst;
-	t_list	*head;
 
-	if (lst == NULL)
-		return (NULL);
-	ptr = lst;
-	head = NULL;
-	while (ptr != NULL)
+	new_lst = NULL;
+	while (lst != NULL)
 	{
-		new_lst = ft_lstnew(f(ptr->content));
-		if (new_lst == NULL)
-		{
-			ft_lstclear(&head, del);
-			return (NULL);
-		}
-		ft_lstadd_back(&head, new_lst);
-		ptr = ptr->next;
+		ptr = ft_lstnew(f(ptr->content));
+		if (ptr == NULL)
+			del(ptr);
+		else
+			ft_lstadd_back(&new_lst, ptr);
+		lst = lst->next;
 	}
-	return (head);
+	return (new_lst);
 }
