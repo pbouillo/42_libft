@@ -6,14 +6,14 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:22:46 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/03 10:28:45 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/05/07 14:02:02 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* The memmove() function copies len bytes from memory area src to
 memory area dst.
-- same as memcpy but handles overlaps by copying forward if dest < src 
-and backwards otherwise */
+- same as memcpy but handles overlaps by copying backwards if dest > src
+and normally otherwise */
 
 #include "libft.h"
 

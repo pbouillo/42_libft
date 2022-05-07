@@ -6,15 +6,14 @@
 /*   By: pbouillo <pbouillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 13:17:57 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/04/26 11:26:17 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/05/07 14:04:25 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*Allocates (with malloc(3)) and returns a copy of
 ’s1’ with the characters specified in ’set’ removed
 from the beginning and the end of the string.
-Returns the trimmed string; NULL if allocation fails 
-- creates a trimmed substring of *s1 without chars in set */
+Returns the trimmed string; NULL if allocation fails */
 
 #include "libft.h"
 
