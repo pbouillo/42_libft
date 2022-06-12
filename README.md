@@ -17,7 +17,7 @@
 | int ft_isdigit(int c)   | returns wether an integer is a digit or not              | none | mid |
 | int ft_tolower(int c)   | returns an uppercase letter as a lowercase letter        | none | mid |
 | int ft_toupper(int c)   | returns a lowercase letter as an uppercase letter        | none | mid |
-| int ft_digitcount(long nb, int base)   | counts the number of digits of a number, based on its base        | none | mid |
+| int ft_digitcount(long nb, int base)   | counts the number of digits of a number, based on its base (including minus sign if sign = 1)       | none | mid |
 
 
 ## STRINGS (mem-functions)
