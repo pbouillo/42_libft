@@ -1,4 +1,6 @@
-# LIBFT - my own library
+# LIBFT - my C library
+
+> Functions mandatory for the 42 project and my own additions.
 
 ## CTYPE
 
@@ -15,12 +17,10 @@
 | int ft_isdigit(int c)   | returns wether an integer is a digit or not              | none | mid |
 | int ft_tolower(int c)   | returns an uppercase letter as a lowercase letter        | none | mid |
 | int ft_toupper(int c)   | returns a lowercase letter as an uppercase letter        | none | mid |
+| int ft_digitcount(long nb, int base)   | counts the number of digits of a number, based on its base        | none | mid |
+
 
 ## STRINGS (mem-functions)
-
-
-> The strings.h header file of the C Standard Library declares several functions that are useful for
-> manipulating any type of arrays (but byte-wise).
 
 
 | Prototype               | Description | Used functions     | useful? |
@@ -30,11 +30,8 @@
 | void *ft_memchr(const void *s, int c, size_t n)                 | finds c in s (range of n)                              | none | mid |
 | int ft_memcmp(const void *s1, const void *s2, size_t n)         | returns the first difference between s1 and s2         | none | mid |
 | void *ft_memcpy(void *dst, const void *src, size_t n)           | copies n bytes from src to dst                         | none | high|
-| void 	*ft_memmove(void *dst, const void *src, size_t len)       | same as memcpy but handles overlaps by copying forward if dest < src and backwards otherwise                    | none | high|
+| void 	*ft_memmove(void *dst, const void *src, size_t len)       | same as memcpy but handles overlaps                   | none | high|
 | void	*ft_memset(void *b, int c, size_t len)                    | set len bytes of b to c                                | none | mid |
-
-
-> Most useful functions: memcpy/memmove. Memcyp and Memmove are awesome because you can even use it for n-dimensional arrays. Be careful and check that you pass the correct size. If you want to copy for example a whole array like this int arr[8][8] you would pass sizeof(int) * (8 * 8) for the parameter n/len.
 
 
 ## PUTFUNCTIONS
@@ -51,9 +48,6 @@
 | void	ft_putnbr_fd(int n, int fd)    | writes a integer to fd               | write | mid |
 
 
-> most useful function: ft_putnbr_fd is useful to write numbers which isnt that easy without printf. 
-
-
 ## STDLIB
 
 
@@ -65,12 +59,8 @@
 | int ft_atoi(const char *str)                | returns a string as an integer                                                    | none   | high |useful
 | void	*ft_calloc(size_t count, size_t size))| returns an allocated pointer of size count * len and sets mem to 0                | malloc | mid |
 
-> most useful function: ft_aoti. ft_atoi is extremely useful in many projects. In ft_printf you will probably use it a lot
 
-[//]: <| I recommend adding realloc here | realloc gives a pointer more memory withpout loosing its value               | malloc, free | high |> 
-
-
-## STRING (NOT STRING***S***)
+## STRING
 
 
 >The string.h header defines one variable type, one macro, and various functions for manipulating arrays of characters.
@@ -92,11 +82,6 @@
 | char *ft_substr(char const *s, unsigned int start, size_t len) | creates a substring of s from start to start + len                    | malloc | mid      |
 | char	*ft_strtrim(char const *s1, char const *set)             | creates a trimmed substring of *s1 without chars in set                | malloc | mid      |
 
-> Most useful functions: ft_strlen is probably my most used function. Theres a lot of cases where you need a string length. 
-> ft_strdup and ft_strjoin are also extremly useful. If they are working properly you almost cant do nothing wrong with them. 
-> ft_strchr is also really nice to use if you want to know if a string contains a character (if it doesnt 0 is returned).
-
-> Hint: whenever you use a function which uses malloc, always check if the function returns NULL in case something went wrong. At that point your function/program needs to end immediately AFTER you freed all pointers that have been allocated before and could create a leak. Also be carefule and dont malloc something that has been allocated before this can happen if you use ft_strdup because its not visible on a first look.
 
 ## LIST-FUNCTIONS
 
@@ -122,5 +107,12 @@ typedef struct 	s_list
 | t_list *ft_lstnew(void *content)                              | creates a new and give the parameter to the content                     | malloc | high     |
 | int ft_lstsize(t_list *lst)                                   | returns the size of list                                              | none   | mid      |
 
+------------------------------------------------------------------------------------------------------------------------------------------
+## ADDITIONS
 
-> most useful funtions are probably ft_lstadd_back/ft_lstadd_front and ft_lstnew. Although except of ft_lstmap every function is pretty useful if you are using lists.
+> These are the functions I added to the library after completing the project, for future usage.
+> 
+| Prototype               | Description | Used functions     | useful? |
+| :---                    |    :----:   |          :---: |          ---: |
+| void ft_lstadd_back(t_list **lst, t_list *new)                | adds node new to the end of lst                                      | none   | high     |
+| void ft_lstadd_front(t_list **lst, t_list *new)               | adds node new to the front of lst                                     | 
