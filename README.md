@@ -111,9 +111,3 @@ typedef struct 	s_list
 ------------------------------------------------------------------------------------------------------------------------------------------
 ## ADDITIONS
 
-> These are the functions I added to the library after completing the project, for future usage.
-> 
-| Prototype               | Description | Used functions     | useful? |
-| :---                    |    :----:   |          :---: |          ---: |
-|                         |                                      | none   | high     |
-|               |                                     | 
