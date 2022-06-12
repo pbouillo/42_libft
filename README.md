@@ -47,6 +47,7 @@
 | void ft_putendl_fd(char *s, int fd)  | writes a string and a new line to fd | write | low |
 | void	ft_putnbr_fd(int n, int fd)    | writes a integer to fd               | write | mid |
 
+(non fd put_ functions added)
 
 ## STDLIB
 
