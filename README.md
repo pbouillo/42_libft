@@ -115,5 +115,5 @@ typedef struct 	s_list
 > 
 | Prototype               | Description | Used functions     | useful? |
 | :---                    |    :----:   |          :---: |          ---: |
-| void ft_lstadd_back(t_list **lst, t_list *new)                | adds node new to the end of lst                                      | none   | high     |
-| void ft_lstadd_front(t_list **lst, t_list *new)               | adds node new to the front of lst                                     | 
+|                         |                                      | none   | high     |
+|               |                                     | 
