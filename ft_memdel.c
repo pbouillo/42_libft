@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_memdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/14 12:58:05 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/09/14 13:09:24 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/09/14 13:10:35 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/09/14 13:12:27 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* Allocates with malloc and returns a "fresh" '\0' terminated string
-Each character of the string is initialized at '\0'
-if allocation fails, returns NULL */
+/* takes the adress of a memory area that needs to be freed with free
+then sets the pointer to NULL */
 
-char	*ft_strnew(size_t size)
+void	ft_memdel(void **memptr)
 {
-	char	*str;
-
-	str = (char *)malloc(sizeof(char) * size + 1);
-	if (str == NULL)
-		return (NULL);
-	str[size] = '\0';
-	while (size--)
-		str[size] = '\0';
-	return (str);
+	if (memptr != NULL)
+	{
+		free(*memptr);
+		*memptr = NULL;
+	}
 }

@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_memalloc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/14 12:58:05 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/09/14 13:09:24 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/09/14 13:05:05 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/09/14 13:12:49 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* Allocates with malloc and returns a "fresh" '\0' terminated string
-Each character of the string is initialized at '\0'
+/* Allocates with malloc and returns a "fresh" '\0' memory area
+The memory area allocated is initialized to '\0'
 if allocation fails, returns NULL */
 
-char	*ft_strnew(size_t size)
+void	*ft_memalloc(size_t size)
 {
-	char	*str;
+	void	*mem;
 
-	str = (char *)malloc(sizeof(char) * size + 1);
-	if (str == NULL)
+	mem = malloc(size);
+	if (mem == NULL)
 		return (NULL);
-	str[size] = '\0';
-	while (size--)
-		str[size] = '\0';
-	return (str);
+	ft_bzero(mem, size);
+	return (mem);
 }
