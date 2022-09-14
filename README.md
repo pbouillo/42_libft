@@ -86,7 +86,7 @@
 
 ## LIST-FUNCTIONS
 
-> The lst-functions allow you to manipulate and use lists. Lists are quiet useful if you dont know the final length of an array because you can just append as many nodes as you want until you run out of memory. 
+> The lst-functions allow you to manipulate and use lists. Lists are quite useful if you don't know the final length of an array because you can just append as many nodes as you want until you run out of memory. 
 
 ```c
 typedef struct 	s_list
