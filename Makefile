@@ -6,7 +6,7 @@
 #    By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/12 12:10:58 by pbouillo          #+#    #+#              #
-#    Updated: 2022/06/12 13:46:07 by pbouillo         ###   ########.fr        #
+#    Updated: 2022/09/14 16:16:34 by pbouillo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,6 +59,10 @@ SRCS 		= 	ft_atoi.c \
 				ft_substr.c \
 				ft_tolower.c \
 				ft_toupper.c \
+				ft_digitcount.c \
+				ft_lstnullhead.c \
+				ft_memdel.c \
+				ft_strdel.c \
 
 
 CC 			=	cc
