@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:01:58 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/09/14 16:17:40 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/09/14 16:22:38 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,6 @@ int		ft_lstsize(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 /*-------------------------------------------------*/
 int		ft_digitcount(long nb, int base, int sign);
-void	ft_lstnullhead(t_list **lst);
 void	ft_memdel(void **memptr);
 void	ft_strdel(char **strptr);
 
