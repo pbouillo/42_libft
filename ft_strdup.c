@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 13:11:16 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:22:20 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/09/29 08:29:23 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strdup(const char *s1)
 	int		i;
 
 	i = 0;
+	if (new == NULL)
+		return (ft_strdup(""));
 	new = (char *)malloc(sizeof(char) * ft_strlen(s1) + 1);
 	if (new == NULL)
 		return (NULL);
