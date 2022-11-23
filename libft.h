@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:01:58 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/09/14 16:22:38 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/23 17:02:53 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,13 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }					t_list;
+
+typedef enum e_memory
+{
+	push,
+	pop,
+	clear
+}					t_memory;
 
 int		ft_isalpha(int a);
 int		ft_isalnum(int c);
@@ -74,5 +81,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 int		ft_digitcount(long nb, int base, int sign);
 void	ft_memdel(void **memptr);
 void	ft_strdel(char **strptr);
+t_list	*ft_lstfind(t_list *head, void *target);
 
 #endif
