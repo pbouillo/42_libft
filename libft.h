@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:01:58 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/11/28 13:06:06 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 13:15:27 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <stdio.h>
 # include <limits.h>
+# include <stdint.h>
 
 typedef struct s_list
 {
@@ -43,6 +44,7 @@ void	ft_node_delete(t_node **lst);
 void	ft_node_free(t_node *lst);
 void	ft_node_insert_end(t_node **lst, int data);
 void	ft_node_insert_front(t_node **lst, int data);
+t_node	*ft_node_last(t_node *lst);
 
 
 

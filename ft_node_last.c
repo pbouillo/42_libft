@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_node_insert_end.c                               :+:      :+:    :+:   */
+/*   ft_node_last.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/28 11:25:14 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/11/28 13:14:58 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/11/28 13:13:08 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/11/28 13:14:47 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_node_insert_end(t_node **lst, int data)
-{
-	t_node	*node;
+/*
+** Returns a pointer to the last 
+** valid node on the list
+*/
 
-	node = ft_new_node(data);
-	if (*lst != NULL)
-		ft_node_last(*lst)->next = node;
-	else
-		*lst = node;
+t_node	*ft_node_last(t_node *lst)
+{
+	if (lst != NULL)
+		while (lst->next)
+			lst = lst->next;
+	return (lst);
 }
