@@ -6,16 +6,18 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:00:19 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:22:43 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 13:01:33 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Finds the string needle in the string haystack 
-searching for up top len characters.
-If needle is an empty string, haystack is returned;
-if needle occurs nowhere in haystack, NULL is returned;
-otherwise a pointer to the first character of the first
-occurrence of needle is returned */
+/*
+** Finds the string needle in the string haystack 
+** searching for up top len characters.
+** If needle is an empty string, haystack is returned;
+** if needle occurs nowhere in haystack, NULL is returned;
+** otherwise a pointer to the first character of the first
+** occurrence of needle is returned
+*/
 
 #include "libft.h"
 

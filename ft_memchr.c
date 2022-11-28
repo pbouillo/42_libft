@@ -6,15 +6,17 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:18:42 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:21:49 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 12:57:13 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* The memchr() function locates the first occurrence of c 
-(converted to an unsigned char) in string s.
-The memchr() function returns a pointer to the byte located, 
-or NULL if no such byte exists within n bytes.
-- finds c in s (range of n) */
+/*
+** The memchr() function locates the first occurrence of c 
+** (converted to an unsigned char) in string s.
+** The memchr() function returns a pointer to the byte located, 
+** or NULL if no such byte exists within n bytes.
+** - finds c in s (range of n)
+*/
 
 #include "libft.h"
 

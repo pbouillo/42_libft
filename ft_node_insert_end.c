@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_node_insert_end.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/27 16:22:39 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/11/28 12:56:08 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/11/28 11:25:14 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/11/28 13:09:02 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Iterates the list ’lst’ and applies the function ’f’ 
-** on the content of each node.
-*/
-
 #include "libft.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_node_insert_end(t_node **lst, int data)
 {
-	if (f == NULL || lst == NULL)
-		return ;
-	while (lst)
-	{
-		f(lst->content);
-		lst = lst->next;
-	}
+	t_node	*node;
+
+	node = ft_new_node(data);
+	if (*lst != NULL)
+		ft_lstlast(*lst)->next = node;
+	else
+		*lst = node;
 }

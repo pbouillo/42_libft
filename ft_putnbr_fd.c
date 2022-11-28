@@ -6,12 +6,14 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 13:04:18 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:22:09 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 12:58:53 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Outputs the integer 'n' to the given file
-descriptor */
+/*
+** Outputs the integer 'n' to the given file
+** descriptor
+*/
 
 #include "libft.h"
 

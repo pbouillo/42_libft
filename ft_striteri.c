@@ -6,14 +6,16 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 13:08:27 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:22:23 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 13:00:01 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Applies the function 'f' on each character
-of the string passed as argument, passing
-its index as first argument. Each charachter is passed
-by adress to 'f' to be modified if necessary */
+/*
+** Applies the function 'f' on each character
+** of the string passed as argument, passing
+** its index as first argument. Each charachter is passed
+** by adress to 'f' to be modified if necessary
+*/
 
 #include "libft.h"
 

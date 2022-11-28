@@ -6,13 +6,15 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:24:03 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:22:01 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 12:58:08 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* The memset() function writes len bytes of value c 
-(converted to an unsigned char) to the string b.
-The memset() function returns its first argument. */
+/*
+** The memset() function writes len bytes of value c 
+** (converted to an unsigned char) to the string b.
+** The memset() function returns its first argument.
+*/
 
 #include "libft.h"
 

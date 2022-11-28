@@ -6,13 +6,15 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 13:19:29 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:22:26 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 13:00:12 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Allocates (with malloc(3)) and returns a new
-string, which is the result of the concatenation
-of ’s1’ and ’s2’. */
+/*
+** Allocates (with malloc(3)) and returns a new
+** string, which is the result of the concatenation
+** of ’s1’ and ’s2’.
+*/
 
 #include "libft.h"
 

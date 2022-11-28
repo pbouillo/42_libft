@@ -6,11 +6,13 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 15:57:16 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:21:06 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 12:53:37 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* returns wether an integer is alphanummerical or not */
+/*
+** returns wether an integer is alphanummerical or not
+*/
 
 #include "libft.h"
 

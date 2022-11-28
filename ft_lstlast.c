@@ -6,11 +6,13 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 16:17:54 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:21:37 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 12:56:15 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Returns the last node of the list */
+/*
+** Returns the last node of the list
+*/
 
 #include "libft.h"
 

@@ -6,13 +6,15 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 13:14:59 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:21:18 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 12:54:14 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Allocates (with malloc(3)) and returns a string
-representing the integer received as an argument.
-Negative numbers must be handled. */
+/*
+** Allocates (with malloc(3)) and returns a string
+** representing the integer received as an argument.
+** Negative numbers must be handled.
+*/
 
 #include "libft.h"
 

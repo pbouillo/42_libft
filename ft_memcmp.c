@@ -6,13 +6,15 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 10:55:30 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:21:52 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 12:57:26 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Compares byte string s1 against byte string s2
-returns the first difference.
-Both strings are assumed to be n size long */
+/*
+** Compares byte string s1 against byte string s2
+** returns the first difference.
+** Both strings are assumed to be n size long
+*/
 
 #include "libft.h"
 

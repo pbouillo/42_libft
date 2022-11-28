@@ -6,12 +6,14 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 17:51:21 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:20:47 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 12:52:12 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* sets all bytes of s (any datatype) to 0. 
-If n is zero, ft_bzero does nothing */
+/* 
+** sets all bytes of s (any datatype) to 0. 
+** If n is zero, ft_bzero does nothing 
+*/
 
 #include "libft.h"
 

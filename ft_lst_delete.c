@@ -1,29 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_lst_delete.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/27 16:22:39 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/11/28 12:56:08 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/11/28 11:38:39 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/11/28 11:42:22 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Iterates the list ’lst’ and applies the function ’f’ 
-** on the content of each node.
-*/
-
 #include "libft.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lst_delete(t_node **lst)
 {
-	if (f == NULL || lst == NULL)
+	if (*lst == NULL)
 		return ;
-	while (lst)
-	{
-		f(lst->content);
-		lst = lst->next;
-	}
+	ft_lst_delete(&(*lst)->next);
+	ft_node_delete(lst);
 }

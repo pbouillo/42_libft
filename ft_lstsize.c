@@ -6,12 +6,14 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 16:16:36 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:21:46 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 12:56:51 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Counts the number of nodes in a list 
-Returns the length of the list */
+/*
+** Counts the number of nodes in a list 
+** Returns the length of the list
+*/
 
 #include "libft.h"
 

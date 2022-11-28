@@ -1,29 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_new_node.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/27 16:22:39 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/11/28 12:56:08 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/11/28 11:26:48 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/11/28 12:58:17 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Iterates the list ’lst’ and applies the function ’f’ 
-** on the content of each node.
-*/
-
 #include "libft.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+/*
+** Returns an allocated and initialized (to NULL)
+** node of a linked list with the given data value to it
+*/
+
+t_node	*ft_new_node(int data)
 {
-	if (f == NULL || lst == NULL)
-		return ;
-	while (lst)
-	{
-		f(lst->content);
-		lst = lst->next;
-	}
+	t_node	*node;
+
+	node = malloc(sizeof(t_node));
+	if (node == NULL)
+		return (NULL);
+	node->next = NULL;
+	node->data = data;
+	return (node);
 }

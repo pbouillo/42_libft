@@ -6,14 +6,16 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:09:21 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:22:31 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 13:00:36 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* The strlcpy() function copies up to dstsize - 1 characters
-from the NUL-terminated string src to dst, 
-NUL-terminating the result.
-Returns the length of src. */
+/*
+** The strlcpy() function copies up to dstsize - 1 characters
+** from the NUL-terminated string src to dst, 
+** NUL-terminating the result.
+** Returns the length of src.
+*/
 
 #include "libft.h"
 

@@ -1,29 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_lstssize.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/27 16:22:39 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/11/28 12:56:08 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/11/28 12:49:25 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/11/28 12:51:27 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Iterates the list ’lst’ and applies the function ’f’ 
-** on the content of each node.
-*/
-
 #include "libft.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+/* 
+** return the number of nodes in a list from head to tail 
+*/
+
+size_t	ft_lstssize(t_node *lst)
 {
-	if (f == NULL || lst == NULL)
-		return ;
+	size_t	i;
+
+	i = 0;
 	while (lst)
 	{
-		f(lst->content);
 		lst = lst->next;
+		i++;
 	}
+	return (i);
 }

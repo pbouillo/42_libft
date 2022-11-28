@@ -6,14 +6,16 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:13:16 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:22:29 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 13:00:25 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* The strlcat() function appends the NUL-terminated string src 
-to the end of dst. It will append at most dstsize - strlen(dst) - 1 bytes, 
-NUL-terminating the result.
-Returns the initial length of dst plus the length of src. */
+/*
+** The strlcat() function appends the NUL-terminated string src 
+** to the end of dst. It will append at most dstsize - strlen(dst) - 1 bytes, 
+** NUL-terminating the result.
+** Returns the initial length of dst plus the length of src.
+*/
 
 #include "libft.h"
 

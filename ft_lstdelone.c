@@ -6,14 +6,16 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 16:19:05 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:21:31 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 12:55:49 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Takes as a parameter a node and frees the memory
-of the node’s content using the function ’del’ 
-given as a parameter and free the node.
-The memory of ’next’ must not be freed. */
+/*
+** Takes as a parameter a node and frees the memory
+** of the node’s content using the function ’del’ 
+** given as a parameter and free the node.
+** The memory of ’next’ must not be freed.
+*/
 
 #include "libft.h"
 

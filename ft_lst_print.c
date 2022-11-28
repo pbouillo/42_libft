@@ -1,29 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_lst_print.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/27 16:22:39 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/11/28 12:56:08 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/11/28 12:44:54 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/11/28 12:55:10 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Iterates the list ’lst’ and applies the function ’f’ 
-** on the content of each node.
-*/
-
 #include "libft.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+/*
+** prints all the data values in the list
+** each one followed by a c value
+*/
+
+void	ft_lst_print(t_node *lst, int c)
 {
-	if (f == NULL || lst == NULL)
-		return ;
-	while (lst)
+	while (lst != NULL)
 	{
-		f(lst->content);
+		ft_putnbr(lst->data);
 		lst = lst->next;
+		if (lst != NULL)
+			ft_putchar(c);
 	}
+	ft_putchar('\n');
 }

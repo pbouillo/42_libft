@@ -6,14 +6,16 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 13:14:17 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:22:52 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 13:02:06 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Allocates (with malloc(3)) and returns a substring
-from the string ’s’.
-The substring begins at index ’start’ and is of
-maximum size ’len’. Returns the substring, NULL if allocation failed */
+/*
+** Allocates (with malloc(3)) and returns a substring
+** from the string ’s’.
+** The substring begins at index ’start’ and is of
+** maximum size ’len’. Returns the substring, NULL if allocation failed
+*/
 
 #include "libft.h"
 

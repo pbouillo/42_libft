@@ -6,14 +6,16 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 13:13:48 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:20:41 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 12:51:54 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*The atoi() function converts the initial portion of the string 
-pointed to by str to int representation.
-- returns a string as an integer 
-Handles white spaces, then sign, then the conversion */
+/* 
+** The atoi() function converts the initial portion of the string 
+** pointed to by str to int representation.
+** - returns a string as an integer 
+** Handles white spaces, then sign, then the conversion 
+*/
 
 #include "libft.h"
 

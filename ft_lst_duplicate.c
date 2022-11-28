@@ -1,29 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_lst_duplicate.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/27 16:22:39 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/11/28 12:56:08 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/11/28 11:42:54 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/11/28 12:54:56 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Iterates the list ’lst’ and applies the function ’f’ 
-** on the content of each node.
-*/
-
 #include "libft.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+/*
+**
+*/
+
+t_node	*ft_lst_duplicate(t_node *lst)
 {
-	if (f == NULL || lst == NULL)
-		return ;
+	t_node	*dup;
+
+	dup = NULL;
 	while (lst)
 	{
-		f(lst->content);
+		ft_node_insert_end(&dup, lst->data);
 		lst = lst->next;
 	}
+	return (dup);
 }

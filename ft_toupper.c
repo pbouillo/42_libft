@@ -6,11 +6,13 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 11:24:13 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:22:59 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 13:02:23 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* returns a lowercase letter as an uppercase letter */
+/*
+** returns a lowercase letter as an uppercase letter
+*/
 
 #include "libft.h"
 

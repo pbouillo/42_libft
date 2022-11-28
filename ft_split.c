@@ -6,14 +6,16 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 13:16:29 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:22:15 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 12:59:22 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Allocates (with malloc(3)) and returns an array
-of strings obtained by splitting ’s’ using the
-character ’c’ as a delimiter. The array must end
-with a NULL pointer. */
+/*
+** Allocates (with malloc(3)) and returns an array
+** of strings obtained by splitting ’s’ using the
+** character ’c’ as a delimiter. The array must end
+** with a NULL pointer.
+*/
 
 #include "libft.h"
 

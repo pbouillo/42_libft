@@ -6,15 +6,17 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 12:58:05 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/09/14 13:09:24 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 13:01:20 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* Allocates with malloc and returns a "fresh" '\0' terminated string
-Each character of the string is initialized at '\0'
-if allocation fails, returns NULL */
+/*
+** Allocates with malloc and returns a "fresh" '\0' terminated string
+** Each character of the string is initialized at '\0'
+** if allocation fails, returns NULL
+*/
 
 char	*ft_strnew(size_t size)
 {

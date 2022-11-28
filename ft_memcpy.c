@@ -6,12 +6,14 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:20:24 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:21:55 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 12:57:36 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* copies n bytes from memory area src to memory area dst
-return the original value of dst */
+/*
+** copies n bytes from memory area src to memory area dst
+** return the original value of dst
+*/
 
 #include "libft.h"
 

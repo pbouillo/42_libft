@@ -6,11 +6,13 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 16:56:09 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/05/07 14:21:00 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 12:53:28 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*returns wether an integer is aplhanummerical or not*/
+/*
+** returns wether an integer is aplhanummerical or not
+*/
 
 #include "libft.h"
 

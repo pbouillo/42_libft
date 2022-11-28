@@ -6,7 +6,7 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:01:58 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/11/23 17:02:53 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/11/28 13:06:06 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,29 @@ typedef struct s_list
 	struct s_list	*next;
 }					t_list;
 
-typedef enum e_memory
+/* pushswap struct*/
+typedef struct s_node
 {
-	push,
-	pop,
-	clear
-}					t_memory;
+	int				data;
+	struct	s_node	*next;
+}					t_node;
 
+/* pushswap new list and nodes functions*/
+void	ft_node_free(t_node *lst);
+void	ft_lst_delete(t_node **lst);
+t_node	*ft_lst_duplicate(t_node *lst);
+void	ft_lst_print(t_node *lst, int c);
+void	ft_lstfree(t_node *lst);
+size_t	ft_lstssize(t_node *lst);
+t_node	*ft_new_node(int data);
+void	ft_node_delete(t_node **lst);
+void	ft_node_free(t_node *lst);
+void	ft_node_insert_end(t_node **lst, int data);
+void	ft_node_insert_front(t_node **lst, int data);
+
+
+
+/**/
 int		ft_isalpha(int a);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
