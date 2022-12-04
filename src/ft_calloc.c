@@ -6,14 +6,14 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:24:55 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/11/28 13:12:04 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/12/04 16:14:27 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* 
-** The calloc() function contiguously allocates enough 
+/*
+** The calloc() function contiguously allocates enough
 ** space for 'count' objects that are 'size' bytes of memory each
-** and returns a pointer to the allocated memory. 
+** and returns a pointer to the allocated memory.
 ** The allocated memory is filled with bytes of value zero.
 ** Returns a pointer to the allocated memory.
 */
@@ -22,15 +22,11 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void	*data;
+	void	*mem;
 
-	if (count == 0 || size == 0)
-		return (malloc(0));
-	if ((SIZE_MAX / size) < count && size > 0)
-		return (NULL);
-	data = malloc(count * size);
-	if (data == NULL)
-		return (NULL);
-	ft_bzero(data, count * size);
-	return (data);
+	mem = malloc(count * size);
+	if (!mem)
+		return (0);
+	ft_bzero(mem, size * count);
+	return (mem);
 }

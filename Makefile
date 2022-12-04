@@ -6,94 +6,128 @@
 #    By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/12 12:10:58 by pbouillo          #+#    #+#              #
-#    Updated: 2022/12/04 09:05:41 by pbouillo         ###   ########.fr        #
+#    Updated: 2022/12/04 16:09:14 by pbouillo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME 		= 	libft.a
+NAME		= libft.a
+DIRS		= libft
+CC			= gcc
+CFLAGS		= -Wall -Wextra -Werror
+RM 			= rm
+SRC_DIR		= src
+INC_DIR		= incl
+AR 			= ar rc
+BIN_DIR 	= bin
+# **************************************************************************** #
+# COLORS
 
-SRCS 		= 	ft_atoi.c \
-				ft_bzero.c \
-				ft_calloc.c \
-				ft_digitcount.c \
-				ft_isalnum.c \
-				ft_isalpha.c \
-				ft_isascii.c \
-				ft_isdigit.c \
-				ft_isprint.c \
-				ft_itoa.c \
-				ft_lstadd_back.c \
-				ft_lstadd_front.c \
-				ft_lstclear.c \
-				ft_lstdelone.c \
-				ft_lstiter.c \
-				ft_lstlast.c \
-				ft_lstmap.c \
-				ft_lstnew.c \
-				ft_lstsize.c \
-				ft_memchr.c \
-				ft_memcmp.c \
-				ft_memcpy.c \
-				ft_memmove.c \
-				ft_memset.c \
-				ft_putchar.c \
-				ft_putchar_fd.c \
-				ft_putendl_fd.c \
-				ft_putnbr.c \
-				ft_putnbr_fd.c \
-				ft_putstr.c \
-				ft_putstr_fd.c \
-				ft_split.c \
-				ft_strchr.c \
-				ft_strdup.c \
-				ft_striteri.c \
-				ft_strjoin.c \
-				ft_strlcat.c \
-				ft_strlcpy.c \
-				ft_strlen.c \
-				ft_strmapi.c \
-				ft_strncmp.c \
-				ft_strnstr.c \
-				ft_strrchr.c \
-				ft_strtrim.c \
-				ft_substr.c \
-				ft_tolower.c \
-				ft_toupper.c \
-				ft_digitcount.c \
-				ft_memdel.c \
-				ft_strdel.c \
-				ft_lstfind.c \
-				ft_node_free.c \
-				ft_lst_delete.c \
-				ft_lst_duplicate.c \
-				ft_lst_print.c \
-				ft_lstfree.c \
-				ft_lstssize.c \
-				ft_new_node.c \
-				ft_node_delete.c \
-				ft_node_free.c \
-				ft_node_insert_end.c \
-				ft_node_insert_front.c \
-				ft_node_last.c \
-				ft_strcmp.c 
+GREEN		= \033[0;92m
+YELLOW		= \033[0;93m
+BLUE		= \033[0;94m
+END_COLOR	= \033[0;39m
 
-CC 			=	cc
-CFLAGS	 	=	-Wall -Werror -Wextra
-RM 			=	rm -rf
-OBJS 		=	$(SRCS:.c=.o)
+# **************************************************************************** #
+# SOURCES
 
-all: 			$(NAME)
+SRCS 		= 	ft_atoi\
+				ft_bzero\
+				ft_calloc\
+				ft_digitcount\
+				ft_isalnum\
+				ft_isalpha\
+				ft_isascii\
+				ft_isdigit\
+				ft_isprint\
+				ft_itoa\
+				ft_lstadd_back\
+				ft_lstadd_front\
+				ft_lstclear\
+				ft_lstdelone\
+				ft_lstiter\
+				ft_lstlast\
+				ft_lstmap\
+				ft_lstnew\
+				ft_lstsize\
+				ft_memchr\
+				ft_memcmp\
+				ft_memcpy\
+				ft_memmove\
+				ft_memset\
+				ft_putchar\
+				ft_putchar_fd\
+				ft_putendl_fd\
+				ft_putnbr\
+				ft_putnbr_fd\
+				ft_putstr\
+				ft_putstr_fd\
+				ft_split\
+				ft_strchr\
+				ft_strdup\
+				ft_striteri\
+				ft_strjoin\
+				ft_strlcat\
+				ft_strlcpy\
+				ft_strlen\
+				ft_strmapi\
+				ft_strncmp\
+				ft_strnstr\
+				ft_strrchr\
+				ft_strtrim\
+				ft_substr\
+				ft_tolower\
+				ft_toupper\
+				ft_digitcount\
+				ft_memdel\
+				ft_strdel\
+				ft_lstfind\
+				ft_node_free\
+				ft_lst_delete\
+				ft_lst_duplicate\
+				ft_lst_print\
+				ft_lstfree\
+				ft_lstssize\
+				ft_new_node\
+				ft_node_delete\
+				ft_node_free\
+				ft_node_insert_end\
+				ft_node_insert_front\
+				ft_node_last\
+				ft_strcmp\
+				ft_int_strcmp\
+				get_next_line
 
-$(NAME):
-				$(CC) $(CFLAGS) -c $(SRCS)
-				ar -rcs $(NAME) $(OBJS)
+SRC				= $(addprefix $(SRC_DIR)/, $(addsuffix .c, $(SRCS)))
+OBJ 			= $(addprefix $(BIN_DIR)/, $(addsuffix .o, $(SRCS)))
+
+# **************************************************************************** #
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	@$(AR) $(NAME) $(OBJ)
+	@echo "$(GREEN)$(NAME) compiled. $(DEF_COLOR)"
+
+$(BIN_DIR)/%.o: $(SRC_DIR)/%.c Makefile | $(BIN_DIR)
+	@$(CC) -c $(CFLAGS) -I $(INC_DIR) $< -o $@
+	@echo "$(BLUE)Compiling... $(notdir $<) in $(DIRS) $(END_COLOR)"
+
+$(BIN_DIR):
+	@mkdir $(BIN_DIR)
+	@echo "$(YELLOW)Created $(BIN_DIR)/ directory in $(DIRS)/$(END_COLOR)"
 
 clean:
-				$(RM) $(OBJS) !$(NAME)
+	@rm -rf $(BIN_DIR)
+	@echo "$(YELLOW)$(NAME) object files cleaned.$(END_COLOR)"
 
-fclean:			clean
-				$(RM) $(NAME)
+fclean: clean
+	@rm -f $(NAME)
+	@echo "$(YELLOW)$(NAME) .a file cleaned.$(END_COLOR)"
 
-re:				fclean all
+re: fclean all
+	@echo "$(GREEN)Cleaned all and rebuilt $(NAME)$(END_COLOR)"
 
-.PHONY: 		all clean fclean re
+# **************************************************************************** #
+# PHONY
+
+.PHONY: all clean fclean re

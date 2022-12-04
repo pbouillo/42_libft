@@ -1,36 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_int_strcmp.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/26 16:24:03 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/11/28 12:58:08 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/12/04 09:30:09 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/12/04 15:59:19 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** The memset() function writes len bytes of value c 
-** (converted to an unsigned char) to the string b.
-** The memset() function returns its first argument.
-*/
-
 #include "libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+/*
+** Compares two int strings
+** ignores the + sign but aknowledges the negative sign.
+*/
+
+int	ft_int_strcmp(const char *s1, const char *s2)
 {
-	size_t			i;
-	unsigned char	*set;
-	unsigned char	chr;
+	int	i;
+	int	j;
 
 	i = 0;
-	set = (unsigned char *) b;
-	chr = (unsigned char) c;
-	while (i < len)
+	j = i;
+	if (s1[i] == '+')
 	{
-		set[i] = c;
-		i++;
+		if (s2[j] != '+')
+			i++;
 	}
-	return (set);
+	else
+	{
+		if (s2[j] == '+')
+			j++;
+	}
+	while (s1[i] != '\0' && s2[j] != '\0' && s1[i] == s2[j])
+	{
+		i++;
+		j++;
+	}
+	return ((unsigned char)s1[i] - (unsigned char)s2[j]);
 }

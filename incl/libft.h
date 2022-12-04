@@ -6,18 +6,23 @@
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:01:58 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/12/04 09:05:24 by pbouillo         ###   ########.fr       */
+/*   Updated: 2022/12/04 16:12:57 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <unistd.h>
 # include <stdlib.h>
-# include <stdio.h>
+# include <unistd.h>
 # include <limits.h>
-# include <stdint.h>
+# include <fcntl.h>
+# include <string.h>
+# include <stdio.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 8
+# endif
 
 typedef struct s_list
 {
@@ -101,5 +106,6 @@ int		ft_digitcount(long nb, int base, int sign);
 void	ft_memdel(void **memptr);
 void	ft_strdel(char **strptr);
 t_list	*ft_lstfind(t_list *head, void *target);
+int		ft_int_strcmp(const char *s1, const char *s2);
 
 #endif
