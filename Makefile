@@ -6,7 +6,7 @@
 #    By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/12 12:10:58 by pbouillo          #+#    #+#              #
-#    Updated: 2022/11/28 13:15:37 by pbouillo         ###   ########.fr        #
+#    Updated: 2022/12/04 09:05:41 by pbouillo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,6 +75,7 @@ SRCS 		= 	ft_atoi.c \
 				ft_node_insert_end.c \
 				ft_node_insert_front.c \
 				ft_node_last.c \
+				ft_strcmp.c 
 
 CC 			=	cc
 CFLAGS	 	=	-Wall -Werror -Wextra

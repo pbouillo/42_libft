@@ -1,33 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbouillo <pbouillo@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/27 16:16:36 by pbouillo          #+#    #+#             */
-/*   Updated: 2022/12/03 15:45:40 by pbouillo         ###   ########.fr       */
+/*   Created: 2022/12/04 09:04:36 by pbouillo          #+#    #+#             */
+/*   Updated: 2022/12/04 09:04:45 by pbouillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Counts the number of nodes in a list
-** Returns the length of the list
-*/
-
 #include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+int	ft_strcmp(const char *str1, const char *str2)
 {
-	int	size;
+	int		i;
 
-	size = 0;
-	if (lst == NULL)
-		return (0);
-	while (lst)
-	{
-		lst = lst->next;
-		++size;
-	}
-	return (size);
+	i = 0;
+	while (str1[i] == str2[i] && str1[i] && str2[i])
+		i++;
+	return ((unsigned char)str1[i] - (unsigned char)str2[i]);
 }
